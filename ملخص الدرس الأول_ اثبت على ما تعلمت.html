@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملخص الدرس الأول: اثبت على ما تعلمت</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap');
+        body {
+            font-family: 'Amiri', 'Inter', 'Noto Sans Arabic', sans-serif;
+            direction: rtl;
+            text-align: right;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333;
+            line-height: 1.7;
+            overflow-x: hidden; /* Prevent horizontal scroll from animations */
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 20px; /* More rounded corners */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Softer shadow */
+            animation: fadeIn 1s ease-out; /* Main container fade in */
+        }
+        header {
+            text-align: center;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 35px;
+        }
+        header h1 {
+            color: #1a73e8; /* Google Blue */
+            font-size: 2.8em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+            animation: slideInFromTop 1s ease-out;
+        }
+        header p {
+            font-size: 1.15em;
+            color: #555;
+            line-height: 1.5;
+            animation: fadeIn 1.5s ease-out;
+        }
+        section {
+            margin-bottom: 40px;
+            opacity: 0; /* Hidden initially for animation */
+            transform: translateY(20px); /* Slightly moved down initially */
+            animation: sectionFadeIn 0.8s ease-out forwards; /* Apply animation */
+        }
+        section:nth-of-type(1) { animation-delay: 0.5s; }
+        section:nth-of-type(2) { animation-delay: 0.8s; }
+        section:nth-of-type(3) { animation-delay: 1.1s; }
+        section:nth-of-type(4) { animation-delay: 1.4s; }
+
+        section h2 {
+            color: #1a73e8;
+            border-bottom: 3px solid #1a73e8;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+            font-weight: 600;
+            position: relative;
+        }
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            right: 0;
+            width: 0%;
+            height: 3px;
+            background-color: #0f9d58; /* Green accent */
+            animation: expandBorder 1.5s forwards;
+        }
+        section h3 {
+            color: #0f9d58; /* Google Green */
+            margin-bottom: 20px;
+            font-size: 1.7em;
+            font-weight: 600;
+        }
+        section h4 {
+            color: #ea4335; /* Google Red */
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+        ul {
+            list-style-type: none; /* Remove default bullets */
+            padding-right: 0;
+        }
+        ul li {
+            margin-bottom: 12px;
+            padding-right: 30px; /* Space for custom icon */
+            position: relative;
+            transition: transform 0.2s ease-in-out;
+        }
+        ul li:hover {
+            transform: translateX(-5px); /* Slight shift on hover */
+        }
+        ul li .icon {
+            color: #0f9d58; /* Green icon */
+            font-size: 1.1em;
+            position: absolute;
+            right: 0;
+            top: 4px;
+        }
+        ol {
+            padding-right: 25px;
+        }
+        ol li {
+            margin-bottom: 12px;
+            transition: transform 0.2s ease-in-out;
+        }
+        ol li:hover {
+            transform: translateX(-5px); /* Slight shift on hover */
+        }
+        .citation {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInFromTop {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes expandBorder {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+
+        @keyframes sectionFadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Specific icon styling for sections */
+        .section-icon {
+            margin-left: 10px;
+            color: #1a73e8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ملخص الدرس الأول: اثبت على ما تعلمت <i class="fas fa-book-open text-blue-500"></i></h1>
+            <p class="text-lg text-gray-700">مهرجان الكرازة المرقسية 2025 - المرحلة الجامعية</p>
+            <p class="citation">مستخلص من الصفحات 12-19 من المسابقة الدراسية للمرحلة الجامعية.</p>
+        </header>
+
+        <section>
+            <h2 class="text-blue-700">الموضوع الدراسي الأساسي: اثبت على ما تعلمت (2 تي 14:3) <i class="fas fa-cross section-icon"></i></h2>
+            <p class="text-gray-800 mb-6">هذه الوصية من القديس بولس الرسول لتلميذه تيموثاوس هي بمثابة نصيحة للحفاظ على الإيمان المستقيم في الأيام الأخيرة، ومقاومة الهرطقات بقوة وحزم مع محبة ووداعة. يؤكد النص أن الكنيسة لن تقوى عليها أبواب الجحيم.</p>
+
+            <h3 class="text-green-700">أولاً: الإيمان الواحد وصحة التعليم <i class="fas fa-church text-green-500"></i></h3>
+            <p class="text-gray-800 mb-4">إيماننا هو ما وضعه الرب يسوع، وبشر به الرسل، وحفظه الآباء، وقد تسلمناه نقياً وصحيحاً من جيل إلى جيل. يجب أن نحافظ على الإيمان الرسولي المسلم مرة للقديسين ولا نبتدع شيئاً في الدين.</p>
+            <ul class="list-none pr-0">
+                <li><i class="icon fas fa-check-circle"></i> تؤكد الكنيسة حرصها الشديد على سلامة التعليم منذ أيام الآباء الرسل.</li>
+                <li><i class="icon fas fa-check-circle"></i> لا يجوز للمعلمين في أمور الإيمان والعقيدة أن يعلموا آراءهم الخاصة، بل ما سلمته لهم الكنيسة.</li>
+                <li><i class="icon fas fa-check-circle"></i> مثال آريوس: بسبب تعليمه الخاطئ، عُقد مجمع في الإسكندرية ثم المجمع المسكوني في نيقية سنة 325م لمواجهة فكره.</li>
+            </ul>
+
+            <h4 class="text-red-600 mt-6">أسباب الهرطقة: <i class="fas fa-exclamation-triangle text-red-500"></i></h4>
+            <ul class="list-none pr-0">
+                <li><i class="icon fas fa-times-circle"></i> الاختلاط بمذاهب أخرى والتأثر بها أو التتلمذ على كتبهم.</li>
+                <li><i class="icon fas fa-times-circle"></i> الاعتداد بالفكر الخاص وعدم قبول تغييره وعدم طاعة الكنيسة.</li>
+                <li><i class="icon fas fa-times-circle"></i> وجود الكبرياء في القلب، مما يجعل الشخص يعتقد أنه على حق.</li>
+            </ul>
+
+            <h4 class="text-red-600 mt-6">سمات المؤمن الأرثوذكسي: <i class="fas fa-user-check text-red-500"></i></h4>
+            <ul class="list-none pr-0">
+                <li><strong class="text-blue-600">شبعان بالمسيح:</strong> <i class="icon fas fa-heart"></i> يعرفه فكرياً ووجدانياً، يتحد به كيانياً من خلال سر الإفخارستيا. الصلاة هي قناة التواصل المستمر مع الرب، وخاصة صلوات الأجبية وصلاة يسوع.</li>
+                <li><strong class="text-blue-600">شبعان بالكتاب المقدس:</strong> <i class="icon fas fa-book"></i> يدرسه بصفة شخصية وتأملية وتحليلية لمعرفة الحق ومواجهة الأفكار الدخيلة.</li>
+                <li><strong class="text-blue-600">شبعان بالكنيسة المقدسة:</strong> <i class="icon fas fa-crosshairs"></i> يعيش عمق الأرثوذكسية كمنهج حياة وطريق مستقيم في تمجيد الله. الكنيسة هي جماعة المؤمنين المتجمعين في بيت الله المدشن. الطقس هو وعاء العقيدة وحافظها وشرحها.</li>
+                <li><strong class="text-blue-600">شبعان بالآباء:</strong> <i class="icon fas fa-users"></i> نعرف حياتهم، نقتدي بهم، ونستشهد بأقوالهم بإجماعهم. الكنيسة بلا جذور (تراث) ليست فيها حياة.</li>
+                <li><strong class="text-blue-600">شبعان بالتكامل:</strong> <i class="icon fas fa-balance-scale"></i> على دراية بما يحدث في المجتمع من قضايا، وملم بالأحداث الإقليمية والعالمية، ليكون شخصية متكاملة متزنة.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="text-green-700">ثانياً: مصادر التعليم القبطي الأرثوذكسي <i class="fas fa-lightbulb text-green-500"></i></h3>
+            <h4 class="text-red-600">1. الكتاب المقدس: <i class="fas fa-bible text-red-500"></i></h4>
+            <p class="text-gray-800 mb-4">هو دستورنا والحارس الأعلى لكل تعليم في الكنيسة، والمصدر الأول والرئيسي للإعلان الإلهي. يجب دراسته كوحدة واحدة، والتحذير من الاعتماد على الآية الواحدة دون روح الكتاب كله.</p>
+
+            <h4 class="text-red-600">2. التقليد الكنسي: <i class="fas fa-handshake text-red-500"></i></h4>
+            <p class="text-gray-800 mb-4">هو التسليم أو التعليم، وهو الذي سلمنا الكتاب المقدس. الإيمان والتعليم تسلمه الآباء من الرب يسوع نفسه وحفظه الرسل. كل الكنائس في القرون الأولى قبل الانشقاق الخلقيدوني قبلت التقليد الرسولي.</p>
+            <p class="text-gray-800 mb-4">هدف المسيحية هو أن تكون حقائق الإيمان حياة معاشة، ولا خلاص خارج الكنيسة فهي سفينة النجاة.</p>
+
+            <h4 class="text-red-600">3. الليتورجيا (الطقس الكنسي): <i class="fas fa-cross text-red-500"></i></h4>
+            <p class="text-gray-800 mb-4">مرجع موثق وله نفس قيمة قوانين المجامع؛ لأن كل الأجيال صلت بنفس الكلمات المعبرة عن نفس الإيمان النقي.</p>
+            <ul class="list-none pr-0">
+                <li><i class="icon fas fa-check-circle"></i> تعلن إيماننا بالثالوث القدوس، وتجسد الابن وفدائه، وموته وقيامته وصعوده.</li>
+                <li><i class="icon fas fa-check-circle"></i> تعلن إيماننا بالمجيء الثاني والدينونة وقيامة الجسد.</li>
+                <li><i class="icon fas fa-check-circle"></i> تعلن إيماننا بالأسرار المقدسة وعمل الروح القدس.</li>
+                <li><i class="icon fas fa-check-circle"></i> تعلن إيماننا بالقديسة العذراء مريم الثيؤطوكوس وشفاعة القديسين.</li>
+                <li><i class="icon fas fa-check-circle"></i> كل هذا الإيمان نجده في قانون الإيمان.</li>
+            </ul>
+
+            <h4 class="text-red-600">4. سيرة وحياة وأقوال الآباء: <i class="fas fa-history text-red-500"></i></h4>
+            <p class="text-gray-800 mb-4">هم الآباء الذين ساهموا في شرح وصياغة الإيمان، ويشترط للأخذ برأيهم أن يكون عليه إجماع كنسي.</p>
+            <ul class="list-none pr-0">
+                <li><i class="icon fas fa-check-circle"></i> نقرأ نصوص الآباء في أصولها أو الترجمات الأمينة المعتمدة.</li>
+                <li><i class="icon fas fa-check-circle"></i> نقرأ الدراسات الآبائية التي قام بها الباحثون الأمناء.</li>
+                <li><i class="icon fas fa-check-circle"></i> نقرأ للآباء المعتبرين أعمدة في الكنيسة، الذين استندوا على عمل الروح القدس والكتاب المقدس والتقليد المقدس.</li>
+            </ul>
+
+            <h4 class="text-red-600">5. قرارات وقوانين المجامع المسكونية: <i class="fas fa-gavel text-red-500"></i></h4>
+            <p class="text-gray-800">بمثابة قوانين تقف فوق كل تعليم، وما حُسم فيها يحظى بصفة الجماعية وتُذيل بحرمانات لمن يعلم بعكسها.</p>
+        </section>
+
+        <section>
+            <h3 class="text-green-700">ثالثاً: تسليم الإيمان والثبات فيه <i class="fas fa-hand-holding-heart text-green-500"></i></h3>
+            <p class="text-gray-800 mb-4">أسس الرب يسوع كنيسته على صخرة الإيمان الأرثوذكسي، وكلف رسله بحفظ الإيمان وتعليم الشعب. الكنيسة القبطية الأرثوذكسية ترفض التعليم الغريب.</p>
+            <h4 class="text-red-600">دور الأب الأسقف في الكنيسة: <i class="fas fa-user-tie text-red-500"></i></h4>
+            <ol class="list-decimal pr-6">
+                <li><i class="icon fas fa-shield-alt"></i> أن يحفظ الإيمان ويسلمه إلى الأجيال التالية سليماً نقياً.</li>
+                <li><i class="icon fas fa-chalkboard-teacher"></i> أن يكون صالحاً للتعليم بطريقة إيجابية بناءة، بقوة حازمة ومحبة حانية.</li>
+                <li><i class="icon fas fa-scroll"></i> أن يكون ملازماً للكلمة الصادقة، قادراً على وعظ التعليم الصحيح وتوبيخ المناقضين.</li>
+                <li><i class="icon fas fa-eye"></i> أن يكون ساهراً على التعليم.</li>
+            </ol>
+            <p class="text-gray-800">الإيمان وديعة يتعهد الأسقف بحفظها وتسليمها لأناس أمناء أكفاء.</p>
+        </section>
+
+        <section>
+            <h3 class="text-green-700">رابعاً: لماذا نواجه البدع والهرطقات؟ وكيف؟ <i class="fas fa-shield-alt text-green-500"></i></h3>
+            <h4 class="text-red-600">1. لماذا المواجهة؟ <i class="fas fa-question-circle text-red-500"></i></h4>
+            <p class="text-gray-800 mb-4">يذهب البعض إلى أن المواجهة قساوة، ولكن هل يجوز للكنيسة أن تترك كل إنسان ينشر فكره الخاطئ؟. السيد المسيح حذرنا من الأنبياء الكذبة (مت 15:7).</p>
+            <p class="text-gray-800 mb-4">الكنيسة لجأت لعقد المجامع ومحاكمة الهراطقة وقطعهم عند إصرارهم. مواجهة الهراطقة أمر كتابي لضمان وحدة جسد السيد المسيح.</p>
+            <p class="text-gray-800">الآباء الرسل واجهوا الهراطقة لنشر الكرازة وحفظ الإيمان سليماً نقياً (2 تي 2:4).</p>
+
+            <h4 class="text-red-600 mt-6">2. كيف نواجه الهراطقة؟ <i class="fas fa-fist-raised text-red-500"></i></h4>
+            <ol class="list-decimal pr-6">
+                <li><strong class="text-blue-600">الإنذار:</strong> <i class="icon fas fa-bell"></i> (2 تس 14:3-15).</li>
+                <li><strong class="text-blue-600">التجنب:</strong> <i class="icon fas fa-ban"></i> (تي 10:3).</li>
+                <li><strong class="text-blue-600">التوبيخ:</strong> <i class="icon fas fa-exclamation-circle"></i> (تي 13:1-14).</li>
+                <li><strong class="text-blue-600">القطع (الحرم):</strong> <i class="icon fas fa-cut"></i> ليس عن حقد بل لربح النفس وإعلان رفض الكنيسة للفكر الخاطئ (2 يو 10:1-11).</li>
+            </ol>
+            <p class="text-gray-800 mt-6">الكنيسة مسؤولة عن حفظ التعليم وحفظ شعبها من الذئاب الخاطفة. يجب على كل مسيحي أن يقدم التعليم النقي السليم وما تسلمناه من كنيستنا القبطية الأرثوذكسية.</p>
+        </section>
+    </div>
+</body>
+</html>
